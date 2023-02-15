@@ -32,7 +32,7 @@ train_mod.to_csv('results/lazypredict/Model_comparision_train.csv')
 print(train_mod)
 test_mod = test.iloc[: , :]
 test_mod.to_csv('results/lazypredict/Model_comparision_test.csv')
-print(test_mod)
+# print(test_mod)
 
 
 """#Data Visualization
