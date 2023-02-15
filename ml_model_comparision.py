@@ -28,10 +28,10 @@ clf = LazyRegressor(verbose=2 ,ignore_warnings=False, custom_metric=None)
 train,test = clf.fit(X_train, X_test, Y_train, Y_test)
 
 train_mod = train.iloc[: , :]
-# train_mod.to_csv('Model_comparision_train.csv')
+train_mod.to_csv('results/lazypredict/Model_comparision_train.csv')
 print(train_mod)
 test_mod = test.iloc[: , :]
-# test_mod.to_csv('Model_comparision_test.csv')
+test_mod.to_csv('results/lazypredict/Model_comparision_test.csv')
 print(test_mod)
 
 
