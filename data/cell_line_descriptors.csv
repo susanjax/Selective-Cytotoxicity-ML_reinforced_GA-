@@ -1,0 +1,77 @@
+cell line,organism,cell type,morphology,tissue,disease,BSL
+MDCK,dog,Animal,epithelial,kidney,Normal,1
+MDCK-II,dog,Animal,epithelial,kidney,Normal,1
+CHO-K1,hamster,Animal,epithelial,ovary,Normal,1
+V79,hamster,Animal,fibroblast,lung,Normal,1
+HCMEC,Human,Human,endothelial,brain,Normal,1
+HUVEC,Human,Human,endothelial,umbilical,Normal,1
+SHSY5Y,Human,Human,epithelial,bone,Neuroblastoma,1
+hFOB1.19,Human,Human,epithelial,bone,osteosarcoma,1
+U87,Human,Human,epithelial,brain,glioblastoma,1
+MCF-7,Human,Human,epithelial,breast,Adenocarcinoma,1
+Caco-2,Human,Human,epithelial,colon,Adenocarcinoma,1
+HCT-116,Human,Human,epithelial,colon,Carcinoma,1
+HT29,Human,Human,epithelial,colon,Normal,1
+HT-1080,Human,Human,epithelial,connective,fibrosarcoma,1
+HEK,Human,Human,epithelial,kidney,embryo,2
+HEK293,Human,Human,epithelial,kidney,embryo,2
+RFPEC,Human,Human,epithelial,kidney,embryo,2
+KEC,Human,Human,epithelial,kidney,Normal,1
+HK-2,Human,Human,epithelial,kidney,papilloma,1
+C3A,Human,Human,epithelial,liver,Carcinoma,1
+HepG2,Human,Human,epithelial,liver,Carcinoma,1
+95D,Human,Human,epithelial,lung,Carcinoma,1
+A549,Human,Human,epithelial,lung,Carcinoma,1
+H1299,Human,Human,epithelial,lung,Carcinoma,1
+BEAS-2B,Human,Human,epithelial,lung,Normal,1
+HEBC3-KT,Human,Human,epithelial,lung,Normal,2
+L-132,Human,Human,epithelial,lung,Normal,1
+A2780,Human,Human,epithelial,ovary,Adenocarcinoma,1
+SKOV-3,Human,Human,epithelial,ovary,Adenocarcinoma,1
+16HBE,Human,Human,epithelial,respiratory tract,Carcinoma,2
+A431,Human,Human,epithelial,skin,Carcinoma,1
+AGS,Human,Human,epithelial,stomatch,Adenocarcinoma,2
+EJ28,Human,Human,epithelial,urinary bladder,Carcinoma,1
+UM-UC-3,Human,Human,epithelial,urinary bladder,Normal,1
+HeLa,Human,Human,epithelial,uterus,Adenocarcinoma,2
+HEp-2,Human,Human,epithelial,uterus,Adenocarcinoma,2
+WISH,Human,Human,epithelial,uterus,Adenocarcinoma,1
+hMSC,Human,Human,fibroblast,bone,Normal,1
+MG-63,Human,Human,fibroblast,bone,osteosarcoma,1
+HGF,Human,Human,fibroblast,gingiva,Normal,1
+HFL1,Human,Human,fibroblast,lung,Normal,1
+IMR90,Human,Human,fibroblast,lung,Normal,1
+BJ,Human,Human,fibroblast,skin,Normal,1
+CCL-110,Human,Human,fibroblast,skin,Normal,1
+HDF,Human,Human,fibroblast,skin,Normal,1
+NHDF,Human,Human,fibroblast,skin,Normal,1
+hPDLF,Human,Human,fibroblast,teeth,Normal,1
+L-02,Human,Human,hepatocyte,liver,Normal,1
+HaCat,Human,Human,keratinocyte,skin,Normal,1
+Jurkat,Human,Human,lymphoblast,peripheral blood,leukemia,1
+EBF,Human,Human,lymphoblast,peripheral blood,Normal,1
+Lymphocyte,Human,Human,lymphoblast,peripheral blood,Normal,1
+Macrophages,Human,Human,macrophage,peripheral blood,Normal,1
+143B,Human,Human,mix,bone,osteosarcoma,1
+THP-1,Human,Human,monocyte,peripheral blood,leukemia,1
+Monocytes,Human,Human,monocyte,peripheral blood,Normal,1
+PBMC,Human,Human,mononeuclear cell ,blood,Normal,1
+WA09,Human,Human,stem ,stem,Normal,1
+VERO,monkey,Animal,epithelial,kidney,Normal,1
+Hepatocytes,mouse,Animal,epithelial,liver,Normal,1
+L929,mouse,Animal,fibroblast,adipose,Normal,1
+MC3T3-E1,mouse,Animal,fibroblast,bone,Normal,1
+3T3-L1,mouse,Animal,fibroblast,embryo,Normal,1
+BALB/c3T3,mouse,Animal,fibroblast,embryo,Normal,1
+mDF,mouse,Animal,fibroblast,embryo,Normal,1
+NIH3T3,mouse,Animal,fibroblast,embryo,Normal,1
+RAW264.7,mouse,Animal,macrophage,Ascites,leukemia,2
+J774A.1,mouse,Animal,macrophage,Ascites,sarcoma,1
+Ana-1,mouse,Animal,macrophage,peripheral blood,Normal,1
+neuro2A,mouse,Animal,neuroblast,brain,Neuroblastoma,1
+PK-15,pig,Animal,epithelial,kidney,Normal,1
+SIRC,rabbit,Animal,fibroblast,eye,Normal,1
+NRK-52E,rat,Animal,epithelial,kidney,Normal,1
+C6,rat,Animal,fibroblast,brain,glioblastoma,1
+NR8383,rat,Animal,macrophage,lung,Normal,1
+PC12,rat,Animal,small irregularly shaped cells,Adrenal gland,Pheochromocytoma,1
