@@ -39,7 +39,8 @@ def population(size):
   neww = new_one[(new_one['concentration (ug/ml)'] > 5) & (new_one['Hydrodynamic diameter (nm)']> 8)]
   new = neww.reset_index(drop=True)
   new = new.head(size)
-  material_uniq = X.iloc[[random.randrange(0, len(X)) for _ in range(len(new))]]
+  material_uniq = X.loc[X['material']=='Fe3O4'] #to specify the name of the material
+  # material_uniq = X.iloc[[random.randrange(0, len(X)) for _ in range(len(new))]]
   material_uniq = material_uniq.reset_index(drop=True)
   new[['material','mcd', 'electronegativity', 'rox', 'radii',
        'Valance_electron', 'amw', 'lipinskiHBA', 'lipinskiHBD',
@@ -53,8 +54,8 @@ def population(size):
 
 """selecting HepG2 as cancer cell line and  Hepatocytes as normal cell line (both of them are liver cell line """
 def cell_lines(dat):
-  single_norm = uniq_cell_data.loc[df['cell line'] == 'Hepatocytes'] #'BEAS-2B'] #'CHO-K1'] # 'Hepatocytes'] #"'L-02'] # cho-k1 cell line
-  single_canc = uniq_cell_data.loc[df['cell line'] == 'HepG2'] #'A549'] #'SKOV-3'] #'HepG2'] # skov-3 cell line
+  single_norm = uniq_cell_data.loc[df['cell line'] == 'SKOV-3'] #'BEAS-2B'] #'CHO-K1'] # 'Hepatocytes'] #"'L-02'] # cho-k1 cell line
+  single_canc = uniq_cell_data.loc[df['cell line'] == 'CHO-K1'] #'A549'] #'SKOV-3'] #'HepG2'] # skov-3 cell line
   pop_norm =pd.concat([single_norm]*len(dat), ignore_index=True)
   pop_canc = pd.concat([single_canc] * len(dat), ignore_index=True)
   df_norm= dat.copy()

@@ -1,0 +1,7 @@
+git init
+git remote add origin <link to git>
+git remote -v
+git add
+git commit -m "First commit"
+git push origin master
+git help
