@@ -65,25 +65,29 @@ print("Regressor R2-score: ", r2_score(Y_val, testing))
 
 
 """#Visualization"""
-
-custom_params = {"axes.spines.right": False, "axes.spines.top": False}
-sns.set_theme(style="ticks", rc=custom_params)
 sns.set(font_scale=2)
 f, ax = plt.subplots(figsize=(13, 10))
-plt.scatter(Y_train, train, color='#DD7059', s=70, label = 'train data')#, alpha=0.5)
-plt.scatter(Y_test, validation , color='#569FC9',s=70, label = 'validation')#, alpha= 0.5)
-plt.scatter(Y_val, testing, color='#274E13',s=70, label = 'testing')
+plt.scatter(Y_train, train, color='#DD7059', s=40, label='train data')  # , alpha=0.5)
+plt.scatter(Y_test, validation, color='#569FC9', s=40, label='validation')  # , alpha= 0.5)
+# plt.scatter(Y_val, testing, color='#274E13',s=70, label = 'testing')
 plt.plot(Y_test, Y_test, color='#444444', linewidth=3)
-plt.plot(Y_test, (Y_test - np.sqrt(metrics.mean_squared_error(Y_test, validation))), color='#444444', linewidth = 1)
-plt.plot(Y_test, (Y_test + np.sqrt(metrics.mean_squared_error(Y_test, validation))), color='#444444', linewidth = 1)
-plt.title('LGBM Regressor')
+# plt.plot(Y_test, (Y_test - np.sqrt(metrics.mean_squared_error(Y_test, validation))), color='#444444', linewidth = 1)
+# plt.plot(Y_test, (Y_test + np.sqrt(metrics.mean_squared_error(Y_test, validation))), color='#444444', linewidth = 1)
+plt.title('Optimized LGBM Regressor')
 plt.xlabel('actual data')
 plt.ylabel('predicted data')
 plt.legend()
 plt.xlim(0, 135)
 plt.ylim(0, 135)
+
+# set axis line width and color
+ax.spines['bottom'].set_linewidth(2)
+ax.spines['bottom'].set_color('black')
+ax.spines['left'].set_linewidth(2)
+ax.spines['left'].set_color('black')
+
 plt.show()
-# ax.figure.savefig("LGBM_regressor.png",transparent=True)
+# ax.figure.savefig("opt_LGBM_regressor.png", transparent=True, )
 
 X_importance = X_test
 explainer = shap.TreeExplainer(model)
